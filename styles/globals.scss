@@ -1,0 +1,59 @@
+@use "./base/index";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+body {
+  font-family: "Lora";
+  font-weight: bolder;
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+button {
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1em;
+  line-height: 1.2em;
+}
+
+h2,
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+  letter-spacing: 0.05em;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  max-width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+}

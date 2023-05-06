@@ -1,91 +1,90 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./page.module.scss";
+import { notFound } from "next/navigation";
 
-const inter = Inter({ subsets: ['latin'] })
+export const metadata = {
+  title: "Огнезащита любых конструкций и материалов",
+};
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+      <section className={styles.main}>
+        <h1>Огнезащита любых конструкций и материалов от 1 дня</h1>
+        <ul>
+          <li>Обработка до 2 000 м2 в день</li>
+          <li>Выдача нормативных документов</li>
+          <li>Устраним все замечания и подготовим к проверке</li>
+          <li>Гарантия согласования c ГУ МЧС</li>
+        </ul>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      <section>
+        <h2>Защищаем от пожара</h2>
+        <div>С помощью оптимального огнезащитного состава</div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <Link href="/OgnezashitaDerevo">
+          <Image
+            src="/Homepage/ogn_derevo.webp"
+            width={300}
+            height={200}
+            alt=""
+          />
+          <div>Деревянные конструкции</div>
+        </Link>
+        <Link href="/OgnezashitaMetall">
+          <Image
+            src="/Homepage/ogn_metall.webp"
+            width={300}
+            height={200}
+            alt=""
+          />
+          <div>Металлоконструкции</div>
+        </Link>
+        <Link href="/OgnezashitaVozduhovod">
+          <Image
+            src="/Homepage/ogn_vosduhovod.webp"
+            width={300}
+            height={200}
+            alt=""
+          />
+          <div>Воздуховоды и вентиляцию</div>
+        </Link>
+        <Link href="/OgnezashitaKovrov">
+          <Image
+            src="/Homepage/ogn_kovry.webp"
+            width={300}
+            height={200}
+            alt=""
+          />
+          <div>Ткани и ковровые покрытия</div>
+        </Link>
+        <Link href="/OgnezashitaOffice">
+          <Image
+            src="/Homepage/ogn_office.webp"
+            width={300}
+            height={200}
+            alt=""
+          />
+          <div>Офисные помещения</div>
+        </Link>
+        <Link href="/OgnezashitaCherdakov">
+          <Image
+            src="/Homepage/ogn_cherdak.webp"
+            width={300}
+            height={200}
+            alt=""
+          />
+          <div>Чердаки</div>
+        </Link>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+      <section className={styles.license}>
+        <h2>Действуем на основании лицензии МЧС</h2>
+        <Image src="/lic1.webp" width={300} height={400} alt="" />
+        <Image src="/lic2.webp" width={300} height={400} alt="" />
+      </section>
+    </>
+  );
 }

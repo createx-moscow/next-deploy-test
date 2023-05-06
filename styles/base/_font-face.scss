@@ -1,0 +1,83 @@
+/* =================
+Fonts
+================= */
+
+@font-face {
+  font-family: "Poppins";
+  src: local(Poppins-Bold),
+    url(/fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: local(Lora-Regular), url(/fonts/Lora/Lora-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src: local(Lora-Regular), url(/fonts/Lora/Lora-Medium.ttf) format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+// @font-face {
+//   font-family: "Montserrat";
+//   src: local(Montserrat-Regular),
+//     url(./assets/fonts/Montserrat/montserrat-v18-latin_cyrillic-regular.woff2)
+//       format("woff2"),
+//     url(./assets/fonts/Montserrat/montserrat-v18-latin_cyrillic-regular.woff)
+//       format("woff"),
+//     url(./assets/fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Montserrat";
+//   src: local(Montserrat-Black),
+//     url(./assets/fonts/Montserrat/montserrat-v18-latin_cyrillic-900.woff2)
+//       format("woff2"),
+//     url(./assets/fonts/Montserrat/montserrat-v18-latin_cyrillic-900.woff)
+//       format("woff"),
+//     url(./assets/fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Open Sans";
+//   src: local(OpenSans-Regular),
+//     url(./assets/fonts/Open_Sans/open-sans-v27-latin_cyrillic-regular.woff2)
+//       format("woff2"),
+//     url(./assets/fonts/Open_Sans/open-sans-v27-latin_cyrillic-regular.woff)
+//       format("woff"),
+//     url(./assets/fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Open Sans";
+//   src: local(OpenSans-SemiBold),
+//     url(./assets/fonts/Open_Sans/open-sans-v27-latin_cyrillic-600.woff2)
+//       format("woff2"),
+//     url(./assets/fonts/Open_Sans/open-sans-v27-latin_cyrillic-600.woff)
+//       format("woff"),
+//     url(./assets/fonts/Open_Sans/OpenSans-SemiBold.ttf) format("truetype");
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Open Sans";
+//   src: local(OpenSans-ExtraBold),
+//     url(./assets/fonts/Open_Sans/open-sans-v27-latin_cyrillic-800.woff2)
+//       format("woff2"),
+//     url(./assets/fonts/Open_Sans/open-sans-v27-latin_cyrillic-800.woff)
+//       format("woff"),
+//     url(./assets/fonts/Open_Sans/OpenSans-ExtraBold.ttf) format("truetype");
+//   font-display: swap;
+// }

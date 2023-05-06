@@ -1,0 +1,7 @@
+import { Header } from "./Header/Header";
+import { Burger } from "./Burger/Burger";
+import { NavMain } from "./NavMain/NavMain";
+import { Button } from "./Button/Button";
+import { Footer } from "./Footer/Footer";
+
+export { Header, Burger, NavMain, Button, Footer };

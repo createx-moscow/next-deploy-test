@@ -1,0 +1,152 @@
+@use "./font-face" as *;
+
+/* =================
+Typography
+================= */
+
+.h1 {
+  font-family: var(--ff100);
+  font-size: var(--fs20);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  max-width: 30ch;
+}
+
+.h2 {
+  font-family: var(--ff100);
+  font-size: var(--fs18);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  max-width: 30ch;
+}
+
+.h3,
+.card-services0__title {
+  font-family: var(--ff100);
+  font-size: var(--fs16);
+  font-weight: 700;
+  margin-bottom: 0.7em;
+  max-width: 30ch;
+}
+
+@media screen and (min-width: 600px) {
+  .h1 {
+    font-size: var(--fs24);
+  }
+  .h2 {
+    font-size: var(--fs22);
+  }
+  .h3 {
+    font-size: var(--fs20);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .h1 {
+    font-size: var(--fs30);
+    max-width: 40ch;
+  }
+  .h2 {
+    font-size: var(--fs24);
+    max-width: 40ch;
+  }
+  .h3 {
+    font-size: var(--fs22);
+    max-width: 40ch;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .h1 {
+    font-size: var(--fs40);
+    max-width: none;
+  }
+  .h2 {
+    font-size: var(--fs32);
+    max-width: none;
+  }
+  .h3 {
+    font-size: var(--fs20);
+    max-width: none;
+  }
+
+  .main__header {
+    font-size: var(--fs64);
+  }
+
+  .card-services0__title {
+    font-size: var(--fs20);
+  }
+}
+
+.main__content {
+  font-family: var(--ff200);
+  margin-bottom: 2em;
+}
+
+.nav__link {
+  font-family: var(--ff100);
+  font-size: var(--fs32);
+  letter-spacing: 0.7px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: var(--fs12);
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .nav__link {
+    font-size: var(--fs14);
+  }
+  // .img-title0 h3 {
+  //   font-size: var(--fs18);
+  // }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    font-size: var(--fs16);
+  }
+  // .img-title0 h3 {
+  //   font-size: var(--fs20);
+  // }
+}
+
+.footer__header {
+  font-family: var(--ff100);
+  font-weight: 700;
+}
+
+.btn,
+.btn--large {
+  font-family: var(--ff100);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 640px) {
+  .btn,
+  .btn--large {
+    font-family: var(--ff100);
+    font-size: var(--fs12);
+    font-weight: 700;
+  }
+}
+
+.copyright__text {
+  font-size: var(--fs12);
+}
+
+@media screen and (min-width: 480px) {
+  .copyright__text {
+    font-size: var(--fs14);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .copyright__text {
+    font-size: var(--fs16);
+  }
+}
