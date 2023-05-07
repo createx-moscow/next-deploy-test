@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "next/image";
+
 import styles from "./homepage.module.scss";
 import imgLicense1 from "./assets/lic1.webp";
 import imgLicense2 from "./assets/lic2.webp";
@@ -73,11 +75,11 @@ const Homepage = () => {
         <div>С помощью оптимального огнезащитного состава</div>
 
         <div className={styles.cards}>
-          {list.map((obj) => (
-            <Link to={obj.link}>
+          {list.map((obj, index) => (
+            <Link key={index} to={obj.link}>
               <div className={styles.card}>
                 <div style={{ backgroundColor: obj.classMod }}>
-                  <img src={obj.img} alt={obj.imgAlt} />
+                  <Image src={obj.img} alt={obj.imgAlt} />
                 </div>
                 <div
                   className={`${styles.card__bottom}`}
@@ -93,8 +95,8 @@ const Homepage = () => {
 
       <section className={styles.license}>
         <h2>Действуем на основании лицензии МЧС</h2>
-        <img src={imgLicense1} alt="" />
-        <img src={imgLicense2} alt="" />
+        <Image src={imgLicense1} alt="" />
+        <Image src={imgLicense2} alt="" />
       </section>
     </>
   );
