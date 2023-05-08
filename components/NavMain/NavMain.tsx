@@ -9,8 +9,9 @@ const menu = [
     name: "О компании",
     link: "/about",
   },
-  { name: "Статьи", link: "/blog" },
   { name: "Услуги", link: "/uslugi" },
+  { name: "Статьи", link: "/blog" },
+  { name: "Партнеры", link: "/partners" },
   { name: "Контакты", link: "/contacts" },
 ];
 
@@ -33,7 +34,7 @@ export const NavMain = () => {
         <ul className={styles.nav__list}>
           {menu.map((item, index) => {
             return (
-              <li key={index}>
+              <li key={index} className={styles.nav__item}>
                 <Link href={item.link} className={styles.nav__link}>
                   {item.name}
                 </Link>

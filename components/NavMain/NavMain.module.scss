@@ -23,8 +23,14 @@
     list-style: none;
   }
 
+  &__item {
+    margin-bottom: 1rem;
+  }
+
   &__link {
     text-decoration: none;
+    font-size: 2rem;
+    color: #05589d;
   }
 }
 
