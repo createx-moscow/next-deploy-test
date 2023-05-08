@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    height: 2em;
+    margin-bottom: 0.5em;
+    &_checked {
+      font-size: 0.7rem;
+      margin-bottom: none;
+    }
+  }
+}
