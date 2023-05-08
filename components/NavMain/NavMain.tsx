@@ -30,11 +30,13 @@ export const NavMain = () => {
         onClick={() => setOpen(!open)}
         className={!open ? styles.nav : `${styles.nav} ${styles.nav_open}`}
       >
-        <ul>
+        <ul className={styles.nav__list}>
           {menu.map((item, index) => {
             return (
               <li key={index}>
-                <Link href={item.link}>{item.name}</Link>
+                <Link href={item.link} className={styles.nav__link}>
+                  {item.name}
+                </Link>
               </li>
             );
           })}
@@ -43,15 +45,3 @@ export const NavMain = () => {
     </>
   );
 };
-
-// <nav>
-//   <ul>
-//     {menu.map((item, index) => {
-//       return (
-//         <li key={index}>
-//           <Link href={`/item.name`}>{item.name}</Link>
-//         </li>
-//       );
-//     })}
-//   </ul>
-// </nav>;
