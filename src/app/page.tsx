@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.scss";
-import { notFound } from "next/navigation";
+import { Form } from "../../components/Form/Form";
+import { Partners } from "../../components/Partners/Partners";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
@@ -19,7 +20,7 @@ export default function Home() {
           <li>Гарантия согласования c ГУ МЧС</li>
         </ul>
       </section>
-
+      <Form></Form>
       <section>
         <h2>Защищаем от пожара</h2>
         <div>С помощью оптимального огнезащитного состава</div>
@@ -85,6 +86,7 @@ export default function Home() {
         <Image src="/lic1.webp" width={300} height={400} alt="" />
         <Image src="/lic2.webp" width={300} height={400} alt="" />
       </section>
+      <Partners></Partners>
     </>
   );
 }

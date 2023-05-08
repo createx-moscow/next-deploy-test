@@ -4,7 +4,15 @@ import Link from "next/link";
 import styles from "./NavMain.module.scss";
 import { useState } from "react";
 
-const menu = [{ name: "about" }, { name: "blog" }, { name: "contacts" }];
+const menu = [
+  {
+    name: "О компании",
+    link: "/about",
+  },
+  { name: "Статьи", link: "/blog" },
+  { name: "Услуги", link: "/uslugi" },
+  { name: "Контакты", link: "/contacts" },
+];
 
 export const NavMain = () => {
   const [open, setOpen] = useState(false);
@@ -26,7 +34,7 @@ export const NavMain = () => {
           {menu.map((item, index) => {
             return (
               <li key={index}>
-                <Link href={`/item.name`}>{item.name}</Link>
+                <Link href={item.link}>{item.name}</Link>
               </li>
             );
           })}

@@ -37,7 +37,6 @@ export const Header = () => {
           <Image className="mail" src={iconMsg} width="50" alt=""></Image>
         </a>
 
-        {/* <Burger></Burger> */}
         <NavMain></NavMain>
       </header>
     </>
