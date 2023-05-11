@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from "./Form.module.scss";
 import { useForm } from "react-hook-form";
 import cl from "classnames";
+import ky from "ky";
+import axios from "axios";
 
 type FormValues = {
   name: string;
@@ -10,13 +12,28 @@ type FormValues = {
   checked: string;
 };
 
+// const response = await ky.post(URI_API);
+
 export const Form = () => {
+  const TOKEN = "6168268856:AAF6S4IQUOPl6CwcC-hX82Vzq9zhh-6LYY0";
+  const CHAT = -1001937178937;
+  const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>();
-  const onSubmit = handleSubmit((data) => console.log(data));
+  const onSubmit = handleSubmit((data) => {
+    axios.post(URI_API, {
+      chat_id: CHAT,
+      parseMode: "html",
+      text: data,
+    });
+
+    console.log(data);
+    console.log(data);
+  });
 
   return (
     <form className={styles.form} onSubmit={onSubmit}>
