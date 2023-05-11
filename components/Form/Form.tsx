@@ -28,7 +28,7 @@ export const Form = () => {
     axios.post(URI_API, {
       chat_id: CHAT,
       parseMode: "html",
-      text: `Имя: ${data.name} %0D%0A` + ` Телефон: ${data.phone}`,
+      text: `Имя: ${data.name} ` + ` Телефон: ${data.phone}`,
     });
 
     console.log(data);
