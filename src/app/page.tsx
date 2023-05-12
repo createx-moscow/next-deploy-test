@@ -6,6 +6,8 @@ import { Partners } from "../../components/Partners/Partners";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
+  description:
+    "Компания Пожконтроль обеспечивает огнезащитную обработку конструкций и материалов. Используем оптимальные огнезащитные составы.",
 };
 
 export default function Home() {

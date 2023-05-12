@@ -1,13 +1,28 @@
 .form {
   display: flex;
   flex-direction: column;
+  background-color: #5d5d61;
+  color: white;
+  text-align: center;
 
   &__item {
-    height: 2em;
+    height: 3em;
+    margin: 0 1ch 0.5em 1ch;
     margin-bottom: 0.5em;
+    background-color: #797980;
+    border: none;
+    border-radius: 5px;
+
     &_checked {
       font-size: 0.7rem;
       margin-bottom: none;
+    }
+    &_submit {
+      text-transform: uppercase;
+      background-color: rgb(247, 173, 0);
+      // background-color: rgb(57, 146, 207);
+      color: white;
+      font-weight: bold;
     }
   }
 }

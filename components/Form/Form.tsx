@@ -50,8 +50,12 @@ export const Form = () => {
         placeholder="Телефон"
         {...register("phone", { required: true })}
       />
-      <input className={styles.form__item} type="submit" />
-      <div className={styles.form__item}>
+      <input
+        className={cl(styles.form__item, styles.form__item_submit)}
+        type="submit"
+        value="Рассчитать стоимость"
+      />
+      <div className={styles.form__item_checked}>
         <input
           type="checkbox"
           {...register("checked", { required: true })}
