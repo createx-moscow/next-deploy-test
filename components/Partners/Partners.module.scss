@@ -1,0 +1,11 @@
+.partners__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.partners__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}

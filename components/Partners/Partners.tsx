@@ -16,12 +16,12 @@ const menu = [
     width: 232,
     height: 56,
   },
-  {
-    alt: "Логотип компании Норт",
-    link: "/partners/nort.webp",
-    width: 213,
-    height: 102,
-  },
+  // {
+  //   alt: "Логотип компании Норт",
+  //   link: "/partners/nort.webp",
+  //   width: 213,
+  //   height: 102,
+  // },
   {
     alt: "Логотип компании Огнеза",
     link: "/partners/ogneza.webp",
@@ -46,10 +46,10 @@ export const Partners = () => {
   return (
     <>
       <h2>Работаем с лидерами рынка</h2>
-      <ul>
+      <ul className={styles.partners__list}>
         {menu.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={index} className={styles.partners__item}>
               <Image
                 src={item.link}
                 alt={item.alt}
