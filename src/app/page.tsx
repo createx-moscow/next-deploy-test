@@ -10,83 +10,116 @@ export const metadata = {
     "Компания Пожконтроль обеспечивает огнезащитную обработку конструкций и материалов. Используем оптимальные огнезащитные составы.",
 };
 
+const data = [
+  {
+    header: "Деревянные конструкции",
+    href: "/OgnezashitaDerevo",
+    imgSrc: "/Homepage/ogn_derevo.webp",
+    imgWidth: 300,
+    imgHeight: 200,
+    imgAlt: "деревянная конструкция",
+  },
+  {
+    header: "Металлоконструкции",
+    href: "/OgnezashitaMetall",
+    imgSrc: "/Homepage/ogn_metall.webp",
+    imgWidth: 300,
+    imgHeight: 200,
+    imgAlt: "металлоконструкция",
+  },
+  {
+    header: "Воздуховоды и вентиляцию",
+    href: "/OgnezashitaVozduhovod",
+    imgSrc: "/Homepage/ogn_vosduhovod.webp",
+    imgWidth: 300,
+    imgHeight: 200,
+    imgAlt: "Воздуховоды и вентиляцию",
+  },
+  {
+    header: "Ткани и ковровые покрытия",
+    href: "/OgnezashitaKovrov",
+    imgSrc: "/Homepage/ogn_kovry.webp",
+    imgWidth: 300,
+    imgHeight: 200,
+    imgAlt: "Ткани и ковровые покрытия",
+  },
+  {
+    header: "Офисные помещения",
+    href: "/OgnezashitaOffice",
+    imgSrc: "/Homepage/ogn_office.webp",
+    imgWidth: 300,
+    imgHeight: 200,
+    imgAlt: "Офисные помещения",
+  },
+  {
+    header: "Чердаки",
+    href: "/OgnezashitaCherdakov",
+    imgSrc: "/Homepage/ogn_cherdak.webp",
+    imgWidth: 300,
+    imgHeight: 200,
+    imgAlt: "Чердаки",
+  },
+];
+
+const advantages = [
+  "Обработка до 2 000 м2 в день",
+  "Выдача нормативных документов",
+  "Устраним все замечания",
+  "Подготовим к проверке",
+  "Гарантия согласования c ГУ МЧС",
+];
+
 export default function Home() {
   return (
     <>
-      <section className={styles.main}>
+      <section className={styles.advantages}>
         <h1>Огнезащита любых конструкций и материалов от 1 дня</h1>
-        <ul>
-          <li>Обработка до 2 000 м2 в день</li>
-          <li>Выдача нормативных документов</li>
-          <li>Устраним все замечания и подготовим к проверке</li>
-          <li>Гарантия согласования c ГУ МЧС</li>
+        <ul className={styles.advantages__list}>
+          {advantages.map((item, index) => {
+            return (
+              <li key={index} className={styles.advantages__item}>
+                {item}
+              </li>
+            );
+          })}
         </ul>
       </section>
       <Form></Form>
       <section>
-        <h2>Защищаем от пожара</h2>
-        <div>С помощью оптимального огнезащитного состава</div>
+        <h2>Защищаем от пожара с помощью оптимального огнезащитного состава</h2>
 
-        <Link href="/OgnezashitaDerevo">
-          <Image
-            src="/Homepage/ogn_derevo.webp"
-            width={300}
-            height={200}
-            alt=""
-          />
-          <div>Деревянные конструкции</div>
-        </Link>
-        <Link href="/OgnezashitaMetall">
-          <Image
-            src="/Homepage/ogn_metall.webp"
-            width={300}
-            height={200}
-            alt=""
-          />
-          <div>Металлоконструкции</div>
-        </Link>
-        <Link href="/OgnezashitaVozduhovod">
-          <Image
-            src="/Homepage/ogn_vosduhovod.webp"
-            width={300}
-            height={200}
-            alt=""
-          />
-          <div>Воздуховоды и вентиляцию</div>
-        </Link>
-        <Link href="/OgnezashitaKovrov">
-          <Image
-            src="/Homepage/ogn_kovry.webp"
-            width={300}
-            height={200}
-            alt=""
-          />
-          <div>Ткани и ковровые покрытия</div>
-        </Link>
-        <Link href="/OgnezashitaOffice">
-          <Image
-            src="/Homepage/ogn_office.webp"
-            width={300}
-            height={200}
-            alt=""
-          />
-          <div>Офисные помещения</div>
-        </Link>
-        <Link href="/OgnezashitaCherdakov">
-          <Image
-            src="/Homepage/ogn_cherdak.webp"
-            width={300}
-            height={200}
-            alt=""
-          />
-          <div>Чердаки</div>
-        </Link>
+        <div className={styles.services}>
+          {data.map((item, index) => {
+            return (
+              <div key={index} className={styles.services__service}>
+                <Link href={item.href} className={styles.services__link}>
+                  <Image
+                    src={item.imgSrc}
+                    width={item.imgWidth}
+                    height={item.imgHeight}
+                    alt={item.imgAlt}
+                    className={styles.services__image}
+                  />
+                  <h2 className={styles.services__header}>{item.header}</h2>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       <section className={styles.license}>
         <h2>Действуем на основании лицензии МЧС</h2>
-        <Image src="/lic1.webp" width={300} height={400} alt="" />
-        <Image src="/lic2.webp" width={300} height={400} alt="" />
+        <div className={styles.license_center}>
+          <Image
+            className={styles.license__license}
+            src="/lic1.webp"
+            width={300}
+            height={400}
+            alt=""
+          />
+          <Image src="/lic2.webp" width={300} height={400} alt="" />
+        </div>
       </section>
       <Partners></Partners>
     </>

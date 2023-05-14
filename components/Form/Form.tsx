@@ -56,11 +56,7 @@ export const Form = () => {
         value="Рассчитать стоимость"
       />
       <div className={styles.form__item_checked}>
-        <input
-          type="checkbox"
-          {...register("checked", { required: true })}
-          checked
-        />
+        <input type="checkbox" {...register("checked", { required: true })} />
         <span className={styles.form__item_checked}>
           Согласен на обработку
           <Link href="/Policy">персональных данных</Link>
