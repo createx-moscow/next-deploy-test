@@ -100,7 +100,9 @@ export default function Home() {
                     alt={item.imgAlt}
                     className={styles.services__image}
                   />
-                  <h2 className={styles.services__header}>{item.header}</h2>
+                  <div className={styles.services__text}>
+                    <h2 className={styles.services__header}>{item.header}</h2>
+                  </div>
                 </Link>
               </div>
             );

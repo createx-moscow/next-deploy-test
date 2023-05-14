@@ -14,20 +14,21 @@
     margin-bottom: 0.5rem;
     border-radius: 5px;
     border: 1px solid grey;
+    position: relative;
   }
   &__link {
     text-decoration: none;
-    position: relative;
   }
   &__image {
     width: 100%;
   }
-  &__header {
-    position: absolute;
+  &__text {
     background-color: rgba(255, 255, 255, 0.8);
-    width: 100%;
-    bottom: 0;
     color: black;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 }
 
