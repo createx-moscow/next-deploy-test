@@ -74,6 +74,33 @@ export default function Home() {
     <>
       <section className={styles.advantages}>
         <h1>Огнезащита любых конструкций и материалов от 1 дня</h1>
+        <div className={styles.advantages__pics}>
+          <div className={styles.advantages__pics_left}>
+            <Image
+              className={styles.advantages__pic}
+              src="/ogn_kovry.webp"
+              width="170"
+              height="260"
+              alt=""
+            />
+          </div>
+          <div className={styles.advantages__pics_right}>
+            <Image
+              className={styles.advantages__pic}
+              src="/ogn_kovry.webp"
+              width="140"
+              height="140"
+              alt=""
+            />
+            <Image
+              className={styles.advantages__pic}
+              src="/ogn_kovry.webp"
+              width="140"
+              height="100"
+              alt=""
+            />
+          </div>
+        </div>
         <ul className={styles.advantages__list}>
           {advantages.map((item, index) => {
             return (
@@ -83,8 +110,9 @@ export default function Home() {
             );
           })}
         </ul>
+        <Form></Form>
       </section>
-      <Form></Form>
+
       <section>
         <h2>Защищаем от пожара с помощью оптимального огнезащитного состава</h2>
 

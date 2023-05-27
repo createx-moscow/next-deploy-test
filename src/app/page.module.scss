@@ -1,4 +1,30 @@
 .advantages {
+  background: linear-gradient(
+    180deg,
+    rgba(76, 201, 240, 0) 0%,
+    rgba(67, 97, 238, 0.3) 100%
+  );
+  border-radius: 0px 0px 800px 800px;
+  &__pics {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__pic {
+    object-fit: cover;
+    box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
