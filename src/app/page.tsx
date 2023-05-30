@@ -78,7 +78,7 @@ export default function Home() {
           <div className={styles.advantages__pics_left}>
             <Image
               className={styles.advantages__pic}
-              src="/1.jpg"
+              src="/4.jpg"
               width={170}
               height={260}
               alt=""
@@ -88,7 +88,7 @@ export default function Home() {
           <div className={styles.advantages__pics_right}>
             <Image
               className={styles.advantages__pic}
-              src="/ogn_kovry.webp"
+              src="/8.jpg"
               width="140"
               height="140"
               alt=""
@@ -96,7 +96,7 @@ export default function Home() {
             />
             <Image
               className={styles.advantages__pic}
-              src="/ogn_kovry.webp"
+              src="/1.jpg"
               width="140"
               height="100"
               alt=""
