@@ -78,26 +78,29 @@ export default function Home() {
           <div className={styles.advantages__pics_left}>
             <Image
               className={styles.advantages__pic}
-              src="/ogn_kovry.webp"
-              width="170"
-              height="260"
+              src="/1.jpg"
+              width="1700"
+              height="2600"
               alt=""
+              sizes="(max-width: 360px) 60vw"
             />
           </div>
           <div className={styles.advantages__pics_right}>
             <Image
               className={styles.advantages__pic}
               src="/ogn_kovry.webp"
-              width="140"
-              height="140"
+              width="1120"
+              height="1120"
               alt=""
+              sizes="(max-width: 360px) 40vw"
             />
             <Image
               className={styles.advantages__pic}
               src="/ogn_kovry.webp"
-              width="140"
-              height="100"
+              width="1120"
+              height="800"
               alt=""
+              sizes="(max-width: 360px) 40vw"
             />
           </div>
         </div>

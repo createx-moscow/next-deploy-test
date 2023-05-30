@@ -24,6 +24,9 @@
     box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
   }
+  &__pic_left {
+    max-width: 160px;
+  }
 
   &__list {
     display: flex;
@@ -63,8 +66,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width: 361px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+    }
   }
   &__license {
     margin-bottom: 1em;
+    @media screen and (min-width: 361px) {
+      margin-bottom: 0;
+      max-width: 48%;
+    }
   }
 }
