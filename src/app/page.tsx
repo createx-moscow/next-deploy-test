@@ -79,8 +79,8 @@ export default function Home() {
             <Image
               className={styles.advantages__pic}
               src="/1.jpg"
-              width="1700"
-              height="2600"
+              width={1700}
+              height={2600}
               alt=""
               sizes="(max-width: 360px) 60vw"
             />
