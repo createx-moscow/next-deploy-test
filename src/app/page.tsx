@@ -79,8 +79,8 @@ export default function Home() {
             <Image
               className={styles.advantages__pic}
               src="/1.jpg"
-              width={1700}
-              height={2600}
+              width={170}
+              height={260}
               alt=""
               sizes="(max-width: 360px) 60vw"
             />
@@ -89,16 +89,16 @@ export default function Home() {
             <Image
               className={styles.advantages__pic}
               src="/ogn_kovry.webp"
-              width="1120"
-              height="1120"
+              width="140"
+              height="140"
               alt=""
               sizes="(max-width: 360px) 40vw"
             />
             <Image
               className={styles.advantages__pic}
               src="/ogn_kovry.webp"
-              width="1120"
-              height="800"
+              width="140"
+              height="100"
               alt=""
               sizes="(max-width: 360px) 40vw"
             />
