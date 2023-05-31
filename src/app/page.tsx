@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 import { Form } from "../../components/Form/Form";
 import { Partners } from "../../components/Partners/Partners";
+import { License } from "../../components/License/License";
+import { Ipl } from "../../components/Ipl/Ipl";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
@@ -62,11 +64,12 @@ const data = [
 ];
 
 const advantages = [
-  "Обработка до 2 000 м2 в день",
-  "Выдача нормативных документов",
-  "Устраним все замечания",
-  "Подготовим к проверке",
-  "Гарантия согласования c ГУ МЧС",
+  "Обрабатываем до 2 000 м2 в день",
+  "Без остановки работы предприятия",
+  "Выдаем нормативные документы",
+  "Устраняем все замечания",
+  "Подготавливаем к проверке",
+  "Гарантируем согласование c ГУ МЧС",
 ];
 
 export default function Home() {
@@ -141,19 +144,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.license}>
-        <h2>Действуем на основании лицензии МЧС</h2>
-        <div className={styles.license_center}>
-          <Image
-            className={styles.license__license}
-            src="/lic1.webp"
-            width={300}
-            height={400}
-            alt=""
-          />
-          <Image src="/lic2.webp" width={300} height={400} alt="" />
-        </div>
-      </section>
+      <License></License>
+      <Ipl></Ipl>
       <Partners></Partners>
     </>
   );

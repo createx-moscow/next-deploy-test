@@ -1,0 +1,19 @@
+.license {
+  &_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 561px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+  }
+  &__license {
+    margin-bottom: 1em;
+    @media screen and (min-width: 561px) {
+      margin-bottom: 0;
+    }
+  }
+}

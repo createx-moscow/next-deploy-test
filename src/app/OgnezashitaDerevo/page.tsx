@@ -1,38 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.scss";
+import { License } from "../../../components/License/License";
+import { Ipl } from "../../../components/Ipl/Ipl";
+import { Advantages } from "../../../components/Advantages/Advantages";
 
 export default function OgnezashitaDerevo() {
   return (
     <>
-      <section>
-        <h1>Огнезащита деревянных конструкций и материалов от 1 дня</h1>
-        <ul>
-          <li>Обработка до 2 000 м2 в день</li>
-          <li>Выдача нормативных документов</li>
-          <li>Устраним все замечания и подготовим к проверке</li>
-          <li>Гарантия согласования c ГУ МЧС</li>
-        </ul>
-      </section>
+      <Advantages></Advantages>
 
-      <section>
-        <h2>Защищаем от пожара</h2>
-        <div>С помощью оптимального огнезащитного состава</div>
-
-        <Link href="/OgnezashitaDerevo">Derevo</Link>
-        <Image
-          src="/Homepage/ogn_derevo.webp"
-          width={300}
-          height={200}
-          alt=""
-        />
-      </section>
-
-      <section className={styles.license}>
-        <h2>Действуем на основании лицензии МЧС</h2>
-        <Image src="/lic1.webp" width={300} height={400} alt="" />
-        <Image src="/lic2.webp" width={300} height={400} alt="" />
-      </section>
+      <License></License>
+      <Ipl></Ipl>
     </>
   );
 }
