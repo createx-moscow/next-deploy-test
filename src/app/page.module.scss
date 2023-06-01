@@ -4,7 +4,7 @@
     rgba(76, 201, 240, 0) 0%,
     rgba(67, 97, 238, 0.3) 100%
   );
-  border-radius: 0px 0px 800px 800px;
+  // border-radius: 0px 0px 800px 800px;
   &__pics {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -41,24 +41,26 @@
 
 .services {
   &__service {
-    background-color: wheat;
     margin-bottom: 0.5rem;
     border-radius: 5px;
     border: 1px solid grey;
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   &__link {
     text-decoration: none;
   }
   &__image {
     width: 100%;
+    object-fit: cover;
   }
+  &__price {
+    // color: #4361ee;
+    color: rgb(57, 146, 207);
+    font-size: 14px;
+  }
+
   &__text {
-    background-color: rgba(255, 255, 255, 0.8);
     color: black;
-    height: 30%;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    margin-left: 10px;
   }
 }

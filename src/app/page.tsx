@@ -20,6 +20,7 @@ const data = [
     imgWidth: 300,
     imgHeight: 200,
     imgAlt: "деревянная конструкция",
+    priceFrom: 150,
   },
   {
     header: "Металлоконструкции",
@@ -28,6 +29,7 @@ const data = [
     imgWidth: 300,
     imgHeight: 200,
     imgAlt: "металлоконструкция",
+    priceFrom: 250,
   },
   {
     header: "Воздуховоды и вентиляцию",
@@ -36,6 +38,7 @@ const data = [
     imgWidth: 300,
     imgHeight: 200,
     imgAlt: "Воздуховоды и вентиляцию",
+    priceFrom: 350,
   },
   {
     header: "Ткани и ковровые покрытия",
@@ -44,6 +47,7 @@ const data = [
     imgWidth: 300,
     imgHeight: 200,
     imgAlt: "Ткани и ковровые покрытия",
+    priceFrom: 450,
   },
   {
     header: "Офисные помещения",
@@ -52,6 +56,7 @@ const data = [
     imgWidth: 300,
     imgHeight: 200,
     imgAlt: "Офисные помещения",
+    priceFrom: 550,
   },
   {
     header: "Чердаки",
@@ -60,6 +65,7 @@ const data = [
     imgWidth: 300,
     imgHeight: 200,
     imgAlt: "Чердаки",
+    priceFrom: 650,
   },
 ];
 
@@ -116,9 +122,9 @@ export default function Home() {
             );
           })}
         </ul>
-        <Form></Form>
       </section>
-
+      <br />
+      <Form></Form>
       <section>
         <h2>Защищаем от пожара с помощью оптимального огнезащитного состава</h2>
 
@@ -135,6 +141,9 @@ export default function Home() {
                     className={styles.services__image}
                   />
                   <div className={styles.services__text}>
+                    <span className={styles.services__price}>
+                      от {item.priceFrom} р. за метр<sup>2</sup>
+                    </span>
                     <h2 className={styles.services__header}>{item.header}</h2>
                   </div>
                 </Link>
