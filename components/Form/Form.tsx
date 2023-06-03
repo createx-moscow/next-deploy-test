@@ -59,7 +59,9 @@ export const Form = () => {
         <input type="checkbox" {...register("checked", { required: true })} />
         <span className={styles.form__item_checked}>
           Согласен на обработку
-          <Link href="/Policy">персональных данных</Link>
+          <Link className={styles.form__link} href="/Policy">
+            <span className={styles.form__personal}> персональных данных</span>
+          </Link>
         </span>
       </div>
     </form>

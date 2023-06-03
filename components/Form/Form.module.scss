@@ -16,8 +16,11 @@
     border-radius: 5px;
 
     &_checked {
+      display: flex;
       font-size: 0.7rem;
       margin-bottom: none;
+      justify-content: center;
+      align-items: center;
     }
     &_submit {
       text-transform: uppercase;
@@ -26,5 +29,12 @@
       color: white;
       font-weight: bold;
     }
+  }
+  &__link {
+    text-decoration: rgb(57, 146, 207) dashed 2;
+  }
+  &__personal {
+    color: rgb(57, 146, 207);
+    margin-left: 0.3ch;
   }
 }
