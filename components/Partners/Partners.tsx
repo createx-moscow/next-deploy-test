@@ -45,7 +45,7 @@ const menu = [
 export const Partners = () => {
   return (
     <>
-      <h2>Работаем с лидерами рынка</h2>
+      <h2>Работаем с ведущими поставщиками огнезащитных материалов</h2>
       <ul className={styles.partners__list}>
         {menu.map((item, index) => {
           return (
