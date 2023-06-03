@@ -36,34 +36,41 @@ export const Form = () => {
   });
 
   return (
-    <form className={styles.form} onSubmit={onSubmit}>
-      <h2>Рассчитать стоимость работ по огнезащите</h2>
-      <input
-        className={styles.form__item}
-        type="text"
-        placeholder="Имя"
-        {...register("name", { required: true })}
-      />
-      <input
-        className={styles.form__item}
-        type="text"
-        placeholder="Телефон"
-        {...register("phone", { required: true })}
-      />
-      <input
-        className={cl(styles.form__item, styles.form__item_submit)}
-        type="submit"
-        value="Рассчитать стоимость"
-      />
-      <div className={styles.form__item_checked}>
-        <input type="checkbox" {...register("checked", { required: true })} />
-        <span className={styles.form__item_checked}>
-          Согласен на обработку
-          <Link className={styles.form__link} href="/Policy">
-            <span className={styles.form__personal}> персональных данных</span>
-          </Link>
-        </span>
-      </div>
-    </form>
+    <>
+      <form className={styles.form} onSubmit={onSubmit}>
+        <h2 className={styles.form__header}>
+          Рассчитать стоимость работ по огнезащите
+        </h2>
+        <input
+          className={styles.form__item}
+          type="text"
+          placeholder="Имя"
+          {...register("name", { required: true })}
+        />
+        <input
+          className={styles.form__item}
+          type="text"
+          placeholder="Телефон"
+          {...register("phone", { required: true })}
+        />
+        <input
+          className={cl(styles.form__item, styles.form__item_submit)}
+          type="submit"
+          value="Рассчитать стоимость"
+        />
+        <div className={styles.form__item_checked}>
+          <input type="checkbox" {...register("checked", { required: true })} />
+          <span className={styles.form__item_checked}>
+            Согласен на обработку
+            <Link className={styles.form__link} href="/Policy">
+              <span className={styles.form__personal}>
+                {" "}
+                персональных данных
+              </span>
+            </Link>
+          </span>
+        </div>
+      </form>
+    </>
   );
 };

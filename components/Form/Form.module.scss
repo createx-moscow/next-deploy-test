@@ -1,18 +1,41 @@
 .form {
   display: flex;
   flex-direction: column;
-
   text-align: center;
   border-radius: 5px;
   box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.2);
+  // background: linear-gradient(to right, darkgrey 0%, grey 50%, darkgrey 100%);
+  background-color: rgb(104, 103, 103);
 
+  background-image: repeating-linear-gradient(
+    12deg,
+    transparent,
+    transparent 0.5px,
+    rgba(255, 255, 255, 0.5) 1px,
+    rgba(255, 255, 255, 0.5) 20px
+  );
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    #101010 5%,
+    #737373 5%,
+    transparent 75%,
+    transparent 50%
+  );
+  background-size: 6px 6px;
+  background-color: gray;
+  border: 1px solid rgb(39, 39, 39);
+  &__header {
+    color: black;
+  }
   &__item {
     height: 3em;
     margin: 0 1ch 0.5em 1ch;
     margin-bottom: 0.5em;
     background-color: rgba(212, 212, 212, 0.2);
     // color: black;
-    border: none;
+
+    border: 1px solid white;
     border-radius: 5px;
 
     &_checked {
@@ -25,7 +48,14 @@
     &_submit {
       text-transform: uppercase;
       // background-color: rgb(247, 173, 0);
-      background-color: rgb(57, 146, 207);
+      background: linear-gradient(
+        to right,
+        rgb(247, 173, 0) 0%,
+        rgb(240, 131, 43) 20%,
+        rgb(240, 131, 43) 70%,
+        rgb(228, 44, 49) 100%
+      );
+      // background-color: rgb(57, 146, 207);
       color: white;
       font-weight: bold;
     }
