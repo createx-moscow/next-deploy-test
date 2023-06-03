@@ -41,6 +41,11 @@
 }
 
 .services {
+  @media (min-width: 600px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
   &__service {
     margin-bottom: 0.5rem;
     border-radius: 5px;
