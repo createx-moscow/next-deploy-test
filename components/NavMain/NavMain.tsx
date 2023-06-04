@@ -7,7 +7,7 @@ import { useState } from "react";
 const menu = [
   {
     name: "О компании",
-    link: "/about",
+    link: "/o-kompanii",
   },
   { name: "Услуги", link: "/uslugi" },
   { name: "Статьи", link: "/blog" },

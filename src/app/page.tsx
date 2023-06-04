@@ -141,10 +141,10 @@ export default function Home() {
                     className={styles.services__image}
                   />
                   <div className={styles.services__text}>
+                    <h2 className={styles.services__header}>{item.header}</h2>
                     <span className={styles.services__price}>
                       от {item.priceFrom} р. за метр<sup>2</sup>
                     </span>
-                    <h2 className={styles.services__header}>{item.header}</h2>
                   </div>
                 </Link>
               </div>
