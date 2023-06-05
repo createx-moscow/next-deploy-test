@@ -47,9 +47,10 @@
     gap: 5px;
   }
   &__service {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
     // border: 1px solid grey;
+    padding: 0.2rem 0 1rem 0;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
@@ -73,8 +74,14 @@
     margin: 0;
   }
   &__price {
-    // color: #4361ee;
-    color: #05589d;
-    font-size: 14px;
+    color: white;
+    // background-color: #05589d;
+    // border: 4px solid #05589d;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 5px;
+    display: inline-block;
+    width: max-content;
+    font-size: 11px;
   }
 }
