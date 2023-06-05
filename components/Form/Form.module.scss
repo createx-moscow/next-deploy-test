@@ -31,18 +31,36 @@
   // border: 1px solid rgb(39, 39, 39);
   &__header {
     // background: rgb(240, 131, 43);
+    // background: -webkit-linear-gradient(
+    //   to right,
+    //   to right,
+    //   rgb(247, 173, 0) 0%,
+    //   // rgb(240, 131, 43) 20%,
+    //   rgb(240, 131, 43) 70%,
+    //   rgb(228, 44, 49) 100%
+    // );
+    // background: linear-gradient(
+    //   to right,
+    //   rgb(247, 173, 0) 0%,
+    //   // rgb(240, 131, 43) 20%,
+    //   rgb(240, 131, 43) 70%,
+    //   rgb(228, 44, 49) 100%
+    // );
     background: -webkit-linear-gradient(
       to right,
-      to right,
-      rgb(247, 173, 0) 0%,
-      // rgb(240, 131, 43) 20%,
+      rgb(228, 44, 49) 0%,
+      rgb(228, 44, 49) 10%,
+      rgb(247, 173, 0) 35%,
+      rgb(240, 131, 43) 45%,
       rgb(240, 131, 43) 70%,
       rgb(228, 44, 49) 100%
     );
     background: linear-gradient(
       to right,
-      rgb(247, 173, 0) 0%,
-      // rgb(240, 131, 43) 20%,
+      rgb(228, 44, 49) 0%,
+      rgb(228, 44, 49) 10%,
+      rgb(247, 173, 0) 35%,
+      rgb(240, 131, 43) 45%,
       rgb(240, 131, 43) 70%,
       rgb(228, 44, 49) 100%
     );
