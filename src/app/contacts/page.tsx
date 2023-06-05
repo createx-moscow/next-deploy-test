@@ -1,5 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
+import map from "./assets/karta.png";
+import officeBulding from "./assets/adress.jpg";
 
 export default function OgnezashitaDerevo() {
   return (
@@ -13,10 +15,19 @@ export default function OgnezashitaDerevo() {
       <p>г. Москва, ул. Верхняя Первомайская, д. 43, оф. 200</p>
       <div className={styles.map__container}>
         <Image
-          src="/karta.png"
+          src={karta.png}
           alt="схема проезда к офису"
           width="1753"
           height="1003"
+          className={styles.map__image}
+        ></Image>
+      </div>
+      <div className={styles.map__container}>
+        <Image
+          src={officeBulding}
+          alt="ул. Верхняя Первомайская, д. 43"
+          width="1413"
+          height="827"
           className={styles.map__image}
         ></Image>
       </div>
