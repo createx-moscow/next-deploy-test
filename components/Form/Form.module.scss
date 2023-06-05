@@ -29,6 +29,14 @@
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 
   // border: 1px solid rgb(39, 39, 39);
+  &__container {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(0, 0, 0, 0.01) 100%
+    );
+  }
   &__header {
     // background: rgb(240, 131, 43);
     // background: -webkit-linear-gradient(

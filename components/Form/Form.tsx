@@ -38,9 +38,11 @@ export const Form = () => {
   return (
     <>
       <form className={styles.form} onSubmit={onSubmit}>
-        <h2 className={styles.form__header}>
-          Рассчитать стоимость работ по огнезащите
-        </h2>
+        <div className={styles.form__container}>
+          <h2 className={styles.form__header}>
+            Рассчитать стоимость работ по огнезащите
+          </h2>
+        </div>
         <input
           className={styles.form__item}
           type="text"
