@@ -15,7 +15,7 @@ export default function OgnezashitaDerevo() {
       <p>г. Москва, ул. Верхняя Первомайская, д. 43, оф. 200</p>
       <div className={styles.map__container}>
         <Image
-          src={karta.png}
+          src={map}
           alt="схема проезда к офису"
           width="1753"
           height="1003"
