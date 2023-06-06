@@ -7,6 +7,7 @@ import { Partners } from "../../components/Partners/Partners";
 import { License } from "../../components/License/License";
 import { Ipl } from "../../components/Ipl/Ipl";
 import { Advantages } from "../../components/Advantages/Advantages";
+import { Penalties } from "../../components/Penalties/Penalties";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
@@ -75,7 +76,6 @@ export default function Home() {
   return (
     <>
       <Advantages></Advantages>
-
       <br />
       <Form></Form>
       <section>
@@ -105,6 +105,7 @@ export default function Home() {
           })}
         </div>
       </section>
+      <Penalties></Penalties>
 
       <License></License>
       <Ipl></Ipl>

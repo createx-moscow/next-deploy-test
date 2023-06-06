@@ -1,0 +1,23 @@
+.penalties {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    // border: 1px solid grey;
+    padding: 0.2rem 1rem 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    @media screen and (min-width: 640px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__image {
+    object-fit: cover;
+    height: 200px;
+  }
+}
