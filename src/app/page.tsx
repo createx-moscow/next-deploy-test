@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./page.module.scss";
+import { AdvantagesText } from "../../components/AdvantagesText/AdvantagesText";
 import { Form } from "../../components/Form/Form";
 import { Partners } from "../../components/Partners/Partners";
 import { License } from "../../components/License/License";
 import { Ipl } from "../../components/Ipl/Ipl";
+import { Advantages } from "../../components/Advantages/Advantages";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
@@ -59,7 +61,7 @@ const data = [
     priceFrom: 550,
   },
   {
-    header: "Чердаки",
+    header: "Чердачные помещения",
     href: "/OgnezashitaCherdakov",
     imgSrc: "/Homepage/ogn_cherdak.webp",
     imgWidth: 300,
@@ -69,60 +71,11 @@ const data = [
   },
 ];
 
-const advantages = [
-  "Обрабатываем до 2 000 м2 в день",
-  "Без остановки работы предприятия",
-  "Выдаем нормативные документы",
-  "Устраняем все замечания",
-  "Подготавливаем к проверке",
-  "Гарантируем согласование c ГУ МЧС",
-];
-
 export default function Home() {
   return (
     <>
-      <section className={styles.advantages}>
-        <h1>Огнезащита любых конструкций и материалов от 1 дня</h1>
-        <div className={styles.advantages__pics}>
-          <div className={styles.advantages__pics_left}>
-            <Image
-              className={styles.advantages__pic}
-              src="/4.jpg"
-              width={170}
-              height={260}
-              alt=""
-              sizes="(max-width: 360px) 60vw"
-            />
-          </div>
-          <div className={styles.advantages__pics_right}>
-            <Image
-              className={styles.advantages__pic}
-              src="/8.jpg"
-              width="140"
-              height="140"
-              alt=""
-              sizes="(max-width: 360px) 40vw"
-            />
-            <Image
-              className={styles.advantages__pic}
-              src="/1.jpg"
-              width="140"
-              height="100"
-              alt=""
-              sizes="(max-width: 360px) 40vw"
-            />
-          </div>
-        </div>
-        <ul className={styles.advantages__list}>
-          {advantages.map((item, index) => {
-            return (
-              <li key={index} className={styles.advantages__item}>
-                {item}
-              </li>
-            );
-          })}
-        </ul>
-      </section>
+      <Advantages></Advantages>
+
       <br />
       <Form></Form>
       <section>

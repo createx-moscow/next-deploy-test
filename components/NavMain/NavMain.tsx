@@ -3,6 +3,7 @@
 import Link from "next/link";
 import styles from "./NavMain.module.scss";
 import { useState } from "react";
+import { Burger } from "../Burger/Burger";
 
 const menu = [
   {

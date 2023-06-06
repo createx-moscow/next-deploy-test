@@ -1,0 +1,23 @@
+.advantages {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  &__item:nth-child(2n) {
+    margin: 0 0ch 1ex 2ch;
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(-1deg);
+    border-radius: 5px;
+    box-shadow: 4px 10px 30px;
+  }
+  &__item:nth-child(2n + 1) {
+    margin: 0 2ch 1ex 0ch;
+    display: flex;
+    justify-content: flex-start;
+    transform: rotate(1deg);
+    border-radius: 5px;
+    box-shadow: 4px 10px 30px;
+  }
+}
