@@ -1,4 +1,9 @@
 .advantages {
+  @media screen and (min-width: 561px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   background: linear-gradient(
     180deg,
     rgba(76, 201, 240, 0) 0%,
@@ -10,6 +15,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 5px;
+    margin-bottom: 1rem;
     &_left {
       display: flex;
       flex-direction: column;

@@ -3,11 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
 
     @media screen and (min-width: 561px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 5px;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__license {
