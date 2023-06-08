@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
-
+import cl from "classnames";
 import { Oswald, Lora } from "next/font/google";
 import "../../styles/globals.scss";
 
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ru" className={lora.variable}>
+    <html lang="ru" className={cl(lora.variable, oswald.variable)}>
       <body>
         <main>
           <Header></Header>

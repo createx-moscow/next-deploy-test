@@ -82,8 +82,8 @@
     margin: 0 1ch 0.5em 1ch;
     margin-bottom: 0.5em;
     background-color: rgba(212, 212, 212, 0.2);
-    // color: black;
-
+    color: white;
+    font-family: var(--font-lora);
     border: 1px solid white;
     border-radius: 5px;
 
@@ -96,6 +96,7 @@
     }
     &_submit {
       text-transform: uppercase;
+      font-family: var(--font-lora);
       // background-color: rgb(247, 173, 0);
       background: linear-gradient(
         to right,
@@ -107,6 +108,7 @@
       // background-color: rgb(57, 146, 207);
       color: white;
       font-weight: bold;
+      font-weight: 900;
     }
   }
   &__link {
