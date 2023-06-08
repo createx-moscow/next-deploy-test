@@ -8,6 +8,8 @@ import { License } from "../../components/License/License";
 import { Ipl } from "../../components/Ipl/Ipl";
 import { Advantages } from "../../components/Advantages/Advantages";
 import { Penalties } from "../../components/Penalties/Penalties";
+import Swiper from "swiper";
+import { Slider } from "../../components/Slider/Slider";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
@@ -105,11 +107,11 @@ export default function Home() {
           })}
         </div>
       </section>
+      <Partners></Partners>
       <Penalties></Penalties>
 
       <License></License>
       <Ipl></Ipl>
-      <Partners></Partners>
     </>
   );
 }

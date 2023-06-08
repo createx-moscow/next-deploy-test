@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 //import fukam from "./partners/fukam.webp";
-import styles from "./Partners.module.scss";
+import styles from "./Slider.module.scss";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 
@@ -48,11 +48,10 @@ const menu = [
   // },
 ];
 
-export const Partners = () => {
+export const Slider = () => {
   return (
     <>
       <section>
-        <h2>Работаем с ведущими поставщиками огнезащитных материалов</h2>
         <Swiper
           spaceBetween={10}
           centeredSlides={true}
@@ -88,3 +87,20 @@ export const Partners = () => {
     </>
   );
 };
+
+// <h2>Работаем с ведущими поставщиками огнезащитных материалов</h2>
+
+// <ul className={styles.partners__list}>
+//   {menu.map((item, index) => {
+//     return (
+//       <li key={index} className={styles.partners__item}>
+//         <Image
+//           src={item.link}
+//           alt={item.alt}
+//           width={item.width}
+//           height={item.height}
+//         ></Image>
+//       </li>
+//     );
+//   })}
+// </ul>

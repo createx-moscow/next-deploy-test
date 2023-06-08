@@ -5,8 +5,9 @@ import molotok from "./assets/molotok-sudji.jpg";
 export const Penalties = () => {
   return (
     <section>
-      <h2>За нарушение требований пожарной безопасности может грозить:</h2>
+      <h2>Почему важно соблюдать требования пожарной безопасности</h2>
       <div className={styles.penalties__wrapper}>
+        <h3>За нарушение может грозить:</h3>
         <ul className={styles.penalties__list}>
           <li>Штраф для юридических лиц - до 500 000 рублей</li>
           <li>Приостановка деятельности до 90 дней</li>
