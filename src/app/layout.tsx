@@ -5,12 +5,12 @@ import { Oswald, Lora } from "next/font/google";
 import "../../styles/globals.scss";
 
 export const oswald = Oswald({
-  subsets: ["latin", "cyrillic"],
+  subsets: ["cyrillic"],
   display: "swap",
   variable: "--font-oswald",
 });
 export const lora = Lora({
-  subsets: ["latin", "cyrillic"],
+  subsets: ["cyrillic"],
   display: "swap",
   variable: "--font-lora",
 });
