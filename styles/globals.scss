@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-lora);
 }
 
 img {
@@ -20,7 +21,8 @@ img {
 }
 
 body {
-  font-family: "Lora";
+  // font-family: "Lora";
+
   font-weight: bolder;
   font-size: 1rem;
   line-height: 1.6;
@@ -31,7 +33,7 @@ h1,
 h2,
 h3,
 button {
-  font-family: "Poppins";
+  font-family: var(--font-oswald);
   font-weight: bold;
 }
 

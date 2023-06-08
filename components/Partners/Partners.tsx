@@ -4,6 +4,8 @@ import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
 //import fukam from "./partners/fukam.webp";
 import styles from "./Partners.module.scss";
 
@@ -54,7 +56,7 @@ export const Partners = () => {
       <section>
         <h2>Работаем с ведущими поставщиками огнезащитных материалов</h2>
         <Swiper
-          spaceBetween={10}
+          spaceBetween={20}
           centeredSlides={true}
           slidesPerView={2}
           autoplay={{

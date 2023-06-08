@@ -1,6 +1,21 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
+
+import { Oswald, Lora } from "next/font/google";
 import "../../styles/globals.scss";
+
+export const oswald = Oswald({
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+  variable: "--font-oswald",
+});
+export const lora = Lora({
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+  variable: "--font-lora",
+});
+
+console.log(lora);
 
 export const metadata = {
   title: "Create Next App",
@@ -14,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={lora.variable}>
       <body>
         <main>
           <Header></Header>
