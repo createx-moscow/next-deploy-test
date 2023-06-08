@@ -77,9 +77,10 @@ const data = [
 export default function Home() {
   return (
     <>
-      <Advantages></Advantages>
-      <br />
-      <Form></Form>
+      <section>
+        <Advantages></Advantages>
+        <Form></Form>
+      </section>
       <section>
         <h2>Защищаем от пожара с помощью оптимального огнезащитного состава</h2>
 
@@ -109,7 +110,6 @@ export default function Home() {
       </section>
       <Partners></Partners>
       <Penalties></Penalties>
-
       <License></License>
       <Ipl></Ipl>
     </>

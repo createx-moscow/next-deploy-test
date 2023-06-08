@@ -40,7 +40,7 @@ export const Form = () => {
       <form className={styles.form} onSubmit={onSubmit}>
         <div className={styles.form__container}>
           <h2 className={styles.form__header}>
-            Рассчитать стоимость работ по огнезащите
+            Рассчитать стоимость работ по огнезащитной обработке
           </h2>
         </div>
         <input
@@ -65,10 +65,7 @@ export const Form = () => {
           <span className={styles.form__item_checked}>
             Согласен на обработку
             <Link className={styles.form__link} href="/Policy">
-              <span className={styles.form__personal}>
-                {" "}
-                персональных данных
-              </span>
+              <span className={styles.form__personal}>персональных данных</span>
             </Link>
           </span>
         </div>
