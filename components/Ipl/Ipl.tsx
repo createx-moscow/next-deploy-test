@@ -8,11 +8,10 @@ export const Ipl = () => {
     <>
       <section className={styles.license}>
         <h2>
-          Выдаем заключение ИПЛ. Работаем с аккредитованными пожарными
-          лабораториями.
+          Работаем с аккредитованными пожарными лабораториями. Помогаем получить
+          заключение ИПЛ.
         </h2>
         <div className={styles.license_center}>
-          <Image src={zaklyuchenie} width={300} height={400} alt="" />
           <Image
             className={styles.license__license}
             src={attestat}
@@ -20,6 +19,7 @@ export const Ipl = () => {
             height={250}
             alt=""
           />
+          <Image src={zaklyuchenie} width={300} height={400} alt="" />
         </div>
       </section>
     </>

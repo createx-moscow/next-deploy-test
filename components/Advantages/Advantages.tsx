@@ -1,6 +1,6 @@
 import styles from "./Advantages.module.scss";
 import Image from "next/image";
-import { AdvantagesText } from "../AdvantagesText/AdvantagesText";
+import { AdvantagesText2 } from "../AdvantagesText2/AdvantagesText2";
 
 const sectionAdv = {
   h1: "Огнезащита деревянных конструкций и материалов от 1 дня",
@@ -74,8 +74,8 @@ export const Advantages = () => {
             />
           </div>
         </div>
-        <AdvantagesText></AdvantagesText>
       </section>
+      <AdvantagesText2></AdvantagesText2>
     </>
   );
 };

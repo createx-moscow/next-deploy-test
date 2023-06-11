@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import logoWide from "./assets/pozhkontrol_logo.svg";
 
 import styles from "./Footer.module.scss";
 
@@ -34,14 +36,19 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div>
         <h3>О нас</h3>
+        <Image src={logoWide} alt="логотип Пожконтроль"></Image>
         Помогаем с огнезащитной обработкой зданий, конструкций и материалов.
         Работаем с 2017 года.
       </div>
       <div>
         <h3>Контакты</h3>
-        <a href="tel:74951750101">+7 (495) 175-01-01</a>
-        <br></br>
-        <a href="mailto:info@pog01.ru">info@pog01.ru</a>
+        <a className={styles.footer__phone} href="tel:74951750101">
+          +7 (495) 175-01-01
+        </a>
+
+        <a className={styles.footer__mail} href="mailto:info@pog01.ru">
+          info@pog01.ru
+        </a>
         <p>Режим работы: C 09:00 до 20:00 без выходных</p>
         <p>г. Москва, ул. Верхняя Первомайская, д. 43, оф. 200</p>
       </div>
