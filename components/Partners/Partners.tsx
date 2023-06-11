@@ -19,6 +19,12 @@ const menu = [
     height: 95,
   },
   {
+    alt: "Логотип компании Болид",
+    link: "/partners/stroyzashita.png",
+    width: 306,
+    height: 72,
+  },
+  {
     alt: "Логотип компании Тизол",
     link: "/partners/tizol.svg",
     width: 272,

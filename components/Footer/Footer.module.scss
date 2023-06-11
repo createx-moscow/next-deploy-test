@@ -1,4 +1,5 @@
 .footer {
+  border-top: 1px dotted black;
   // background: linear-gradient(
   //   35deg,
   //   rgba(88, 88, 88, 0.1) 0%,
@@ -19,14 +20,24 @@
   &__mail {
     text-transform: uppercase;
     font-family: var(--font-lora);
-    color: white;
+
     text-decoration: none;
     font-size: 1.5rem;
-    outline: 2px solid white;
+    // outline: 2px solid white;
+    border-top: 1px dotted black;
     display: flex;
-    justify-content: center;
+    background: -webkit-linear-gradient(
+      80deg,
+      rgb(48, 156, 163) 0%,
+      rgb(66, 149, 209) 20%,
+      rgb(5, 88, 157) 50%,
+      rgb(77, 61, 145) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     width: 100%;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    // text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 
     //     background: #05589d;
     // border-radius: 5px;
