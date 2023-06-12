@@ -4,28 +4,32 @@
     flex-direction: column;
     list-style-type: none;
     justify-content: center;
+    align-items: flex-start;
     @media screen and (min-width: 561px) {
       width: 80%;
     }
   }
 
   &__item {
-    margin: 0 0ch 0.5ex;
-    padding: 0.2em 2em 0 0;
+    margin: 0 0ch 0 5ch;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 0.7em;
-    border-radius: 5px;
-    box-shadow: 4px 10px 30px;
-    @media screen and (min-width: 361px) {
-      font-size: 0.9em;
-    }
-    @media screen and (min-width: 561px) {
-      max-width: 80%;
-      font-size: 1em;
-    }
+    border-bottom: 1px dotted black;
   }
 
+  @media screen and (min-width: 361px) {
+    font-size: 0.9em;
+  }
+  @media screen and (min-width: 561px) {
+    max-width: 80%;
+    font-size: 1em;
+  }
+
+  &__icon {
+    margin-right: 3ch;
+  }
   // &__item:nth-child(2n) {
   //   margin: 0 0ch 1ex 2ch;
   //   padding: 0.2em 2em 0 0;

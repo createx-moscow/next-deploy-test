@@ -12,19 +12,20 @@
 // }
 
 .slider {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-content: center;
   align-items: center;
   width: 95vw;
+  // background-color: wheat;
 
   &__slide {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
-
-    height: 100%;
+    //  background-color: salmon;
+    width: 100%;
   }
 }
 

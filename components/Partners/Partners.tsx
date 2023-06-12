@@ -60,7 +60,7 @@ export const Partners = () => {
   return (
     <>
       <section>
-        <h2>Работаем с ведущими поставщиками огнезащитных материалов</h2>
+        <h2>Используем материалы ведущих поставщиков рынка огнезащиты</h2>
         <Swiper
           spaceBetween={20}
           centeredSlides={true}

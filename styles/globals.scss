@@ -48,17 +48,19 @@ h3 {
   letter-spacing: 0.05em;
 }
 
-body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+h3 {
+  font-size: 1rem;
 }
+
+// body {
+//   display: grid;
+//   grid-template-rows: auto 1fr auto;
+// }
 
 main {
-  width: 95vw;
+  width: 100vw;
   min-height: 100vh;
   margin: 0 auto;
-}
-
-section {
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }

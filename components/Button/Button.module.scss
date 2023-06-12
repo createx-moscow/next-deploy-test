@@ -1,5 +1,34 @@
-.button__phone,
-.button__email {
-  border: none;
-  color: red;
+.button {
+  height: 3em;
+  margin: 0 1ch 0.5em 1ch;
+  margin-bottom: 0.5em;
+  background-color: rgba(212, 212, 212, 0.2);
+  color: white;
+  font-family: var(--font-lora);
+  border: 1px solid white;
+  border-radius: 5px;
+
+  &_checked {
+    display: flex;
+    font-size: 0.7rem;
+    margin-bottom: none;
+    justify-content: center;
+    align-items: center;
+  }
+  &_submit {
+    text-transform: uppercase;
+    font-family: var(--font-lora);
+    // background-color: rgb(247, 173, 0);
+    background: linear-gradient(
+      to right,
+      rgb(247, 173, 0) 0%,
+      rgb(240, 131, 43) 20%,
+      rgb(240, 131, 43) 70%,
+      rgb(228, 44, 49) 100%
+    );
+    // background-color: rgb(57, 146, 207);
+    color: white;
+    font-weight: bold;
+    font-weight: 900;
+  }
 }

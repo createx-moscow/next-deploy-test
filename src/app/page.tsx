@@ -10,6 +10,8 @@ import { Advantages } from "../../components/Advantages/Advantages";
 import { Penalties } from "../../components/Penalties/Penalties";
 import Swiper from "swiper";
 import { Slider } from "../../components/Slider/Slider";
+import { ButtonFines } from "../../components/ButtonFines/ButtonFines";
+import { SectionSubmit } from "../../components/SectionSubmit/SectionSubmit";
 
 export const metadata = {
   title: "Огнезащита любых конструкций и материалов",
@@ -109,7 +111,9 @@ export default function Home() {
         </div>
       </section>
       <Partners></Partners>
+      <SectionSubmit></SectionSubmit>
       <Penalties></Penalties>
+      <ButtonFines></ButtonFines>
       <License></License>
       <Ipl></Ipl>
     </>

@@ -15,19 +15,19 @@ const advantages = [
 const advantages2 = [
   {
     text: "Обрабатываем до 2 000 м2 в день",
-    icon: "/icons/Ruler.svg",
+    icon: "/icons/meters.jpg",
   },
   {
     text: "Без остановки работы предприятия",
-    icon: "/icons/calculator.svg",
+    icon: "/icons/time.jpg",
   },
   {
     text: "Выдаем нормативные документы",
-    icon: "/icons/ChecklistMinimalistic.svg",
+    icon: "/icons/license.jpg",
   },
   {
     text: "Гарантируем согласование c ГУ МЧС",
-    icon: "/icons/VerifiedCheck.svg",
+    icon: "/icons/warranty_seal.jpg",
   },
 
   // "Устраняем все замечания",
@@ -44,8 +44,8 @@ export const AdvantagesText2 = () => {
               className={styles.advantages__icon}
               src={item.icon}
               alt="линейка"
-              width={35}
-              height={35}
+              width={24}
+              height={24}
             ></Image>
             {item.text}
           </li>

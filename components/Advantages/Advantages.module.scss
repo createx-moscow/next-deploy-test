@@ -1,5 +1,6 @@
 .advantages {
   margin-bottom: 0.5rem;
+
   @media screen and (min-width: 561px) {
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
     180deg,
     rgba(76, 201, 240, 0) 0%,
     rgba(67, 97, 238, 0.3) 70%,
+    rgba(76, 201, 240, 0) 83%,
     rgba(76, 201, 240, 0) 100%
   );
   // border-radius: 0px 0px 800px 800px;
@@ -16,6 +18,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 5px;
+
     margin-bottom: 1rem;
     &_left {
       display: flex;

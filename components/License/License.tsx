@@ -25,6 +25,7 @@ export const License = () => {
           />
 
           <Image
+            className={styles.license__license}
             src="/lic2.webp"
             width={300}
             height={400}
@@ -32,12 +33,14 @@ export const License = () => {
           />
 
           <Image
+            className={styles.license__dogovor}
             src={dogovor}
             width={300}
             height={400}
             alt="Пример договора. ООО Пожконтроль. Титульная страница"
           />
           <Image
+            className={styles.license__dogovor}
             src={dogovor}
             width={300}
             height={400}

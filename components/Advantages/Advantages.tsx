@@ -74,8 +74,8 @@ export const Advantages = () => {
             />
           </div>
         </div>
+        <AdvantagesText2></AdvantagesText2>
       </section>
-      <AdvantagesText2></AdvantagesText2>
     </>
   );
 };
