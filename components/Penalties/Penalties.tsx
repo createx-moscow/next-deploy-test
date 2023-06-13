@@ -9,12 +9,9 @@ export const Penalties = () => {
       <div className={styles.penalties__wrapper}>
         <h3>За нарушение может грозить:</h3>
         <ul className={styles.penalties__list}>
+          <li>Штраф для ИП и должностных лиц - до 50 000 рублей</li>
           <li>Штраф для юридических лиц - до 500 000 рублей</li>
           <li>Приостановка деятельности до 90 дней</li>
-          <li>
-            Уголовная ответственность (в случае причинения вреда жизни и
-            здоровью)
-          </li>
         </ul>
         <Image
           src={molotok}
