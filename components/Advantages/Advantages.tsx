@@ -39,11 +39,15 @@ const img2 = [
   },
 ];
 
-export const Advantages = () => {
+interface AdvantagesProps {
+  title: string;
+}
+
+export const Advantages = ({ title }: AdvantagesProps) => {
   return (
     <>
       <section className={styles.advantages}>
-        <h1>Огнезащита любых конструкций и материалов от 1 дня</h1>
+        <h1>{title}</h1>
         <div className={styles.advantages__pics}>
           <div className={styles.advantages__pics_left}>
             <Image

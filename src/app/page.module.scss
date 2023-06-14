@@ -39,6 +39,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 5px;
   }
+  @media (min-width: 1000px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+  }
   &__service {
     margin-bottom: 1rem;
     border-radius: 5px;

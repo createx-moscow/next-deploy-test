@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <>
       <section>
-        <Advantages></Advantages>
+        <Advantages title="Огнезащита любых конструкций и материалов от 1 дня"></Advantages>
         <Form></Form>
       </section>
       <section>

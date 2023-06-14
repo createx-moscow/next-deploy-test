@@ -11,7 +11,7 @@ import { Advantages } from "../../../components/Advantages/Advantages";
 export default function OgnezashitaDerevo() {
   return (
     <>
-      <Advantages></Advantages>
+      <Advantages title="Огнезащита деревянных конструкций от 1 дня"></Advantages>
       <Form></Form>
       <Penalties></Penalties>
       <License></License>
