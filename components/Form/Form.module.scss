@@ -112,6 +112,13 @@
       font-weight: 900;
     }
   }
+
+  &__item::placeholder {
+    color: white;
+    padding-left: 3ch;
+    font-weight: 900;
+  }
+
   &__link {
     color: black;
     text-decoration: rgb(57, 146, 207) dashed 2;
