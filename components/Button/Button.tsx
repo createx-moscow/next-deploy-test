@@ -7,18 +7,21 @@ import styles from "./Button.module.scss";
 interface ButtonProps {
   // className: string;
   // children: ReactNode;
-  // onClick: () => void;
+  onClick: any;
   buttonText: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
   // className,
   // children,
-  // onClick,
+  onClick,
   buttonText,
 }) => {
   return (
-    <button className={cl(styles.button, styles.button_submit)}>
+    <button
+      className={cl(styles.button, styles.button_submit)}
+      onClick={onClick}
+    >
       {buttonText}
     </button>
   );

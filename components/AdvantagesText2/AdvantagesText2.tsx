@@ -22,16 +22,22 @@ const advantages2 = [
     icon: "/icons/time.jpg",
   },
   {
-    text: "Выдаем нормативные документы",
+    text: "Выдаем все нормативные документы",
     icon: "/icons/license.jpg",
+  },
+
+  {
+    text: "Устраняем все замечания",
+    icon: "/icons/warranty_seal.jpg",
+  },
+  {
+    text: "Подготавливаем к проверке",
+    icon: "/icons/warranty_seal.jpg",
   },
   {
     text: "Гарантируем согласование c ГУ МЧС",
     icon: "/icons/warranty_seal.jpg",
   },
-
-  // "Устраняем все замечания",
-  // "Подготавливаем к проверке",
 ];
 
 export const AdvantagesText2 = () => {

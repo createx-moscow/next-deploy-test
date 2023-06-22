@@ -13,7 +13,10 @@ export const ButtonFines = () => {
           <h2 className={styles.form__header}>Работайте без штрафов МЧС</h2>
         </div>
 
-        <Button buttonText="Получить предложение"></Button>
+        <Button
+          buttonText="Получить предложение"
+          onClick={console.log("clicked")}
+        ></Button>
       </section>
     </>
   );

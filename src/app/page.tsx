@@ -8,6 +8,7 @@ import { License } from "../../components/License/License";
 import { Ipl } from "../../components/Ipl/Ipl";
 import { Advantages } from "../../components/Advantages/Advantages";
 import { Penalties } from "../../components/Penalties/Penalties";
+import { Button } from "../../components/Button/Button";
 import Swiper from "swiper";
 import { Slider } from "../../components/Slider/Slider";
 import { ButtonFines } from "../../components/ButtonFines/ButtonFines";
@@ -113,7 +114,7 @@ export default function Home() {
       <Partners></Partners>
       <SectionSubmit></SectionSubmit>
       <Penalties></Penalties>
-      <ButtonFines></ButtonFines>
+      <Button buttonText="Modal" onClick={console.log("modal")}></Button>
       <License></License>
       <Ipl></Ipl>
     </>
