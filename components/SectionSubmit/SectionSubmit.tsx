@@ -4,6 +4,7 @@ import styles from "./SectionSubmit.module.scss";
 import { Button } from "../Button/Button";
 
 import cl from "classnames";
+import { Modal } from "../Modal/Modal";
 
 export const SectionSubmit = () => {
   return (
@@ -14,8 +15,7 @@ export const SectionSubmit = () => {
             Получить план работ, расчёт и консультацию специалиста
           </h2>
         </div>
-
-        <Button buttonText="Получить консультацию"></Button>
+        <Modal></Modal>
       </section>
     </>
   );

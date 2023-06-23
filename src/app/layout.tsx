@@ -1,4 +1,5 @@
 "use client";
+import { store } from "../redux/store";
 
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
@@ -7,6 +8,7 @@ import { Oswald, Lora } from "next/font/google";
 import "../../styles/globals.scss";
 import { useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
+import { Providers } from "@/redux/provider";
 
 export const oswald = Oswald({
   subsets: ["cyrillic"],
@@ -32,17 +34,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [modalActive, setModalActive] = useState(true);
   return (
     <html lang="ru" className={cl(lora.variable, oswald.variable)}>
-      <body>
-        <main>
-          <Header></Header>
-          {children}
-          <Footer></Footer>
-        </main>
-        <Modal></Modal>
-      </body>
+      <Providers>
+        <body>
+          <main>
+            <Header></Header>
+            {children}
+            <Footer></Footer>
+          </main>
+        </body>
+      </Providers>
     </html>
   );
 }

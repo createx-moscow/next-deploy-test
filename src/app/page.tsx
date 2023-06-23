@@ -9,7 +9,7 @@ import { Ipl } from "../../components/Ipl/Ipl";
 import { Advantages } from "../../components/Advantages/Advantages";
 import { Penalties } from "../../components/Penalties/Penalties";
 import { Button } from "../../components/Button/Button";
-import Swiper from "swiper";
+//import Swiper from "swiper";
 import { Slider } from "../../components/Slider/Slider";
 import { ButtonFines } from "../../components/ButtonFines/ButtonFines";
 import { SectionSubmit } from "../../components/SectionSubmit/SectionSubmit";
@@ -111,7 +111,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <Partners></Partners>
+
       <SectionSubmit></SectionSubmit>
       <Penalties></Penalties>
       <Button buttonText="Modal" onClick={console.log("modal")}></Button>
